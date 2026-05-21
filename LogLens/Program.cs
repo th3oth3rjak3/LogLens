@@ -60,7 +60,7 @@ public static class Program
     {
         if (File.Exists(path))
         {
-            new PagedCommand(new FileInfo(path), null).Execute();
+            new PagedCommand(new FileInfo(path), searchText).Execute();
         }
         else if (Directory.Exists(path))
         {
